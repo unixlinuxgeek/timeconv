@@ -7,7 +7,7 @@ import (
 
 func Test_SecToMin(t *testing.T) {
 	r := floatgen.GenRan(1, 9)
-	s1 := Sec.ToMin(Sec(r))
+	s1 := SecToMin(Sec(r))
 	s2 := Min(r / 60)
 
 	if s1 == s2 {
@@ -19,7 +19,7 @@ func Test_SecToMin(t *testing.T) {
 
 func Test_MinToSec(t *testing.T) {
 	r := floatgen.GenRan(1, 9)
-	s1 := Min.ToSec(Min(r))
+	s1 := MinToSec(Min(r))
 	s2 := Sec(r * 60)
 
 	if s1 == s2 {
@@ -32,7 +32,7 @@ func Test_MinToSec(t *testing.T) {
 // Need Check!!!
 func Test_HourToMin(t *testing.T) {
 	r := floatgen.GenRan(1, 9)
-	s1 := Hour.ToMin(Hour(r))
+	s1 := HourToMin(Hour(r))
 	s2 := Min(r * 60)
 
 	if s1 == s2 {
@@ -45,7 +45,7 @@ func Test_HourToMin(t *testing.T) {
 // 1 hour = 3600 seconds
 func Test_HourToSec(t *testing.T) {
 	r := floatgen.GenRan(1, 9)
-	s1 := Hour.ToSec(Hour(r))
+	s1 := HourToSec(Hour(r))
 	s2 := Sec(r * (60 * 60))
 	t.Logf("r: %f", r)
 	if s1 == s2 {
