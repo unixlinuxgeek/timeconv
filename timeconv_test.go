@@ -29,7 +29,7 @@ func Test_MinToSec(t *testing.T) {
 	}
 }
 
-// Need Check!!!
+
 func Test_HourToMin(t *testing.T) {
 	r := floatgen.GenRan(1, 9)
 	s1 := HourToMin(Hour(r))
@@ -42,7 +42,7 @@ func Test_HourToMin(t *testing.T) {
 	}
 }
 
-// 1 hour = 3600 seconds
+
 func Test_HourToSec(t *testing.T) {
 	r := floatgen.GenRan(1, 9)
 	s1 := HourToSec(Hour(r))
