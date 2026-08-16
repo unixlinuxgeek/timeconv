@@ -12,5 +12,5 @@ func (ms Millisecond) String() string {
 }
 
 func (s Second) String() string {
-	return fmt.Sprintf("%.3f", s)
+	return fmt.Sprintf("%.3f sec", s)
 }
