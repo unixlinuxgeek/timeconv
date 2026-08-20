@@ -9,3 +9,11 @@ func SecToMs(s Second) Millisecond {
 func MsToSec(ms Millisecond) Second {
 	return Second(ms / 1000)
 }
+
+func SecToMicroSec(s Second) MicroSec {
+	return MicroSec(s * 1000000)
+}
+
+func MicroSecToSec(m MicroSec) Second {
+	return Second(m / 1000000)
+}

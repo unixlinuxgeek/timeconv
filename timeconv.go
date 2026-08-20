@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+type MicroSec float64
 type Millisecond float64
 type Second float64
 
@@ -13,4 +14,8 @@ func (ms Millisecond) String() string {
 
 func (s Second) String() string {
 	return fmt.Sprintf("%.3f sec", s)
+}
+
+func (s MicroSec) String() string {
+	return fmt.Sprintf("%.3f µs", s)
 }
